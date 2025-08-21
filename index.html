@@ -3,107 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Details - BassX Headphones</title>
+  <title>My E-Commerce Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background: #f4f6f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
-    .product-details {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 700px;
-      display: flex;
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
     }
-    .product-details img {
-      max-width: 280px;
-      border-radius: 10px;
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: 0.3s;
     }
-    .details {
-      flex: 1;
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
     }
     .product-title {
-      font-size: 1.6em;
-      margin-bottom: 10px;
+      font-size: 1.2em;
+      margin: 10px 0;
       color: #333;
     }
-    .product-description {
-      font-size: 1em;
-      color: #444;
-      margin-bottom: 15px;
-    }
-    .features {
-      margin-bottom: 15px;
-    }
-    .features h3 {
-      margin: 10px 0;
-      font-size: 1.2em;
-      color: #0077b6;
-    }
-    .features ul {
-      margin: 0;
-      padding-left: 18px;
-      color: #555;
-    }
     .price {
-      font-size: 1.4em;
+      font-size: 1.1em;
       color: #e63946;
       font-weight: bold;
-      margin-bottom: 20px;
     }
     .btn {
       display: inline-block;
       background: #0077b6;
       color: white;
-      padding: 12px 20px;
+      padding: 10px 16px;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 1em;
+      margin-top: 10px;
       transition: 0.3s;
     }
     .btn:hover {
       background: #023e8a;
     }
-    .btn-secondary {
-      background: #555;
-      margin-left: 10px;
-    }
   </style>
 </head>
 <body>
-  <div class="product-details">
-    <img src="https://via.placeholder.com/300x250.png?text=Headphones" alt="Headphones">
-    <div class="details">
-      <h2 class="product-title">BassX Wireless Headphones</h2>
-      <p class="product-description">
-        Experience immersive sound with the BassX Wireless Headphones. Designed for music lovers, 
-        these headphones deliver deep bass, crystal-clear vocals, and long-lasting comfort.
-      </p>
-      
-      <div class="features">
-        <h3>Key Features:</h3>
-        <ul>
-          <li>Wireless Bluetooth 5.0 connectivity</li>
-          <li>40mm dynamic sound drivers</li>
-          <li>20 hours battery life</li>
-          <li>Noise cancellation technology</li>
-          <li>Built-in microphone for calls</li>
-        </ul>
-      </div>
-      
+  <header>
+    <h1>Welcome to My Store</h1>
+    <p>Choose your favorite product</p>
+  </header>
+
+  <div class="container">
+    <div class="product-card">
+      <img src="smartwatch.jpg" alt="Smartwatch">
+      <h2 class="product-title">PulseOne Smartwatch</h2>
+      <p class="price">$149.99</p>
+      <a href="project.html" class="btn">View Details</a>
+    </div>
+
+    <div class="product-card">
+      <img src="headphones.jpg" alt="Headphones">
+      <h2 class="product-title">BassX Headphones</h2>
       <p class="price">$89.99</p>
-      
-      <a href="#" class="btn">Add to Cart</a>
-      <a href="reviews.html" class="btn btn-secondary">See Reviews</a>
-      <a href="index.html" class="btn btn-secondary">Back to Store</a>
+      <a href="project2.html" class="btn">View Details</a>
+    </div>
+
+    <div class="product-card">
+      <img src="camera.jpg" alt="Camera">
+      <h2 class="product-title">LensPro Camera</h2>
+      <p class="price">$499.99</p>
+      <a href="project3.html" class="btn">View Details</a>
     </div>
   </div>
 </body>
